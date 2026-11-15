@@ -18,7 +18,7 @@ if (candidate === number) {
     console.log("odd");
 }*/
 
-
+/*
 function dayName(dayNumber){
     switch (dayNumber) {
     case 1:
@@ -40,4 +40,45 @@ function dayName(dayNumber){
 }
 
 }
-console.log(dayName(7));
+console.log(dayName(7));*/
+
+function countVowels(text) {
+    let count=0;
+    for (let i=0; i< text.length; i++){
+    switch(text[i]){
+        case 'a':
+        count = count + 1;
+        break;
+        case 'e':
+        count = count + 1;
+        break;
+        case 'i':
+        count = count + 1;
+        break;
+        case 'o':
+        count = count + 1;
+        break;
+        case 'u':
+        count = count + 1;
+        break;
+        case 'A':
+        count = count + 1;
+        break;
+        case 'E':
+        count = count + 1;
+        break;
+        case 'I':
+        count = count + 1;
+        break;
+        case 'O':
+        count = count + 1;
+        break;
+        case 'U':
+        count = count + 1;
+        break;
+            
+    }
+    }
+    return count;
+}
+console.log(countVowels('Abigail'));

@@ -69,8 +69,47 @@ console.log(dayName(3));
 //   countVowels("Hello World") -> 3
 // ---------------------------------------------------------------------
 function countVowels(text) {
+    let count=0;
+    for (let i=0; i< text.length; i++){
+    switch(text[i]){
+        case 'a':
+        count = count + 1;
+        break;
+        case 'e':
+        count = count + 1;
+        break;
+        case 'i':
+        count = count + 1;
+        break;
+        case 'o':
+        count = count + 1;
+        break;
+        case 'u':
+        count = count + 1;
+        break;
+        case 'A':
+        count = count + 1;
+        break;
+        case 'E':
+        count = count + 1;
+        break;
+        case 'I':
+        count = count + 1;
+        break;
+        case 'O':
+        count = count + 1;
+        break;
+        case 'U':
+        count = count + 1;
+        break;
+            
+    }
+    }
+return count;
 }
+console.log(countVowels('Hello World'));
 
+ 
 
 // ---------------------------------------------------------------------
 // Exercise 4: fizzBuzz
@@ -80,7 +119,34 @@ function countVowels(text) {
 //   fizzBuzz(5) -> "1, 2, Fizz, 4, Buzz"
 // ---------------------------------------------------------------------
 function fizzBuzz(n) {
+    let result = "";
+    let nextFizz = 3;
+    let nextBuzz = 5;
+    for(let i = 1; i <= n; i++){
+        if (i > 1){
+             result=result + ", ";
+        }
+        if (i === nextFizz && i === nextBuzz){
+            result = result + "FizzBuzz"
+        nextFizz= nextFizz + 3
+        nextBuzz= nextBuzz + 5
+        }
+       else if (i === nextFizz){
+            result= result + "Fizz"
+            nextFizz = nextFizz + 3;
+        }
+        else if (i === nextBuzz){
+            result= result + "Buzz"
+            nextBuzz = nextBuzz + 5;
+        }
+        else
+       ( result=result + i);
+   
+    }
+     return result;
 }
+
+console.log(fizzBuzz(20));
 
 
 // ---------------------------------------------------------------------
