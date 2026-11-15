@@ -58,7 +58,7 @@ function dayName(dayNumber) {
 
     }
 }
-console.log(dayName(3));
+
 
 
 // ---------------------------------------------------------------------
@@ -107,7 +107,7 @@ function countVowels(text) {
     }
 return count;
 }
-console.log(countVowels('Hello World'));
+
 
  
 
@@ -146,7 +146,7 @@ function fizzBuzz(n) {
      return result;
 }
 
-console.log(fizzBuzz(20));
+
 
 
 // ---------------------------------------------------------------------
@@ -180,6 +180,16 @@ function buildTriangle(height) {
 //   countWeekendDays([1, 6, 7, 3]) -> 2
 // ---------------------------------------------------------------------
 function countWeekendDays(dayNumbers) {
+    let count= 0
+    for (let i = 0; i < dayNumbers.length; i++){ 
+        
+        let name = dayName(dayNumbers[i]);
+        if (name === 'Sunday' || name === 'Saturday'){
+            count = count + 1
+        }
+
+    }
+   return count
 }
 
 
