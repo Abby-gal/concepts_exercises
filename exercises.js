@@ -178,7 +178,13 @@ left = left +1; right = right -1;
 //             **
 //             ***
 // ---------------------------------------------------------------------
-function buildTriangle(height) {
+function buildTriangle(height) { let stars = ""; let result = "";
+    
+    for(let row =1; row <= height; row++){ stars = stars + "*"
+        if (row > 1){result = result + "\n"}
+        result = result + stars;
+        
+    } return result;
 }
 
 
