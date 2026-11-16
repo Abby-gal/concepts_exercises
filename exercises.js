@@ -157,6 +157,15 @@ function fizzBuzz(n) {
 //   isPalindrome("level") -> true
 // ---------------------------------------------------------------------
 function isPalindrome(word) {
+    let left = 0;
+    let right = word.length -1;
+    while(left < right){
+        if (word[left] !== word[right]){
+            return false;
+        }
+left = left +1; right = right -1;
+    }
+    return true;
 }
 
 
