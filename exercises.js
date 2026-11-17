@@ -322,8 +322,10 @@ for(let i = 1; i < people.length; i++){
    }
 } return oldest.name;
 };
+ 
 
- console.log( findOldest([{ name: "Tom", age: 31 }, { name: "Eva", age: 31 }]));
+
+ 
 // ---------------------------------------------------------------------
 // Exercise 12: namesAtLeastAge
 // Return a NEW array with the names of all people whose age is at
