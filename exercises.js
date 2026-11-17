@@ -239,13 +239,33 @@ function pointsToGrade(points) {
 // Exercise 9: gradeReport
 // The student is an object like { name: "Anna", points: 85 }.
 // Return a text of the form  "Anna: 2 (Good)".
-// Get the grade by calling pointsToGrade() and use a switch for the
+// Get the grade by calling pointsToGrade() and use a switch for the85
 // word: 1 Excellent, 2 Good, 3 Satisfactory, 4 Sufficient,
 //       5 Insufficient
 // ---------------------------------------------------------------------
 function gradeReport(student) {
-}
+    let grade = pointsToGrade(student.points);
+    let gradeWord = "";
+    switch (grade){
+        case 1:
+        gradeWord = "Excellent";
+        break;
+         case 2:
+        gradeWord = "Good";
+        break;
+         case 3:
+        gradeWord = "Satisfactory";
+        break;
+         case 4:
+        gradeWord = "Sufficient";
+        break;
+         case 5:
+        gradeWord = "Insufficient";
+        break;
 
+    }
+   return student.name + ": " + grade + " ("+ gradeWord + ")";
+}
 
 // ---------------------------------------------------------------------
 // Exercise 10: rockPaperScissors
